@@ -426,3 +426,22 @@ a:focus, a:hover, a:active {
 .SecondText{
   color:black ;
 }
+.img_about{
+  width:356px;
+  height:216px;
+  margin-bottom:20px ;
+}
+.about_box{
+  margin-top:130px ;
+}
+.about_p_head{
+  color:rgb(129, 129, 129);
+  font-style: italic;
+  font-family: Raleway;
+  font-size: 17pt;
+}
+.about_p{
+  color:rgb(129, 129, 129);
+  font-family: Raleway;
+  font-size: 13pt;
+}
