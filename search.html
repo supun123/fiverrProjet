@@ -26,7 +26,8 @@
     <link href="css/freelancer.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
+    <script src="angular-1.6.9/angular.js"></script>
+    <script src="js/search.js"></script>
     <style>
         /* Make the image fully responsive */
         .carousel-inner img {
@@ -37,7 +38,7 @@
     </style>
 </head>
 
-<body id="page-top">
+<body id="page-top" ng-app="myModule">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
@@ -180,6 +181,30 @@
     </div>
 </div>
 <br><br><br><br><br><br>
+
+<div ng-controller="myController" >
+    Search : <input type="text" ng-model="searchText" placeholder="Search employees" />
+    <br /><br />
+    <table>
+        <thead></thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            <th>City</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="employee in employees | filter:searchText">
+            <td> {{ employee.name }} </td>
+            <td> {{ employee.gender }} </td>
+            <td> {{ employee.salary  }} </td>
+            <td> {{ employee.city  }} </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
 
 <!-- Footer -->
 <footer class="footer text-center">
