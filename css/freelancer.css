@@ -513,3 +513,23 @@ a:focus, a:hover, a:active {
   background-color:#2C3E50;
   color: white;
 }
+.Search_btn{
+  background-color: hotpink;
+  color: black;
+  width:30% ;
+  float: right ;
+}
+.Search_btn:hover{
+  background-color: deeppink;
+  color: white;
+}
+.Reset_btn{
+  width:30% ;
+float:left ;
+  background-color:#BDBDBD;
+  color: black;
+}
+.Reset_btn:hover{
+  background-color:#2C3E50;
+  color: white;
+}

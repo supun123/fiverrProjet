@@ -12,12 +12,12 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
@@ -26,36 +26,18 @@
     <link href="css/freelancer.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="angular-1.6.9/angular.js"></script>
-    <script src="js/search.js"></script>
+
     <style>
         /* Make the image fully responsive */
         .carousel-inner img {
             width: 100%;
             height: 100%;
         }
-        /* Always set the map height explicitly to define the size of the div
-                * element that contains the map. */
-
-        /* Optional: Makes the sample page fill the window. */
-        #map {
-            height: 50%;
-            width:70%;
-            margin-left:15% ;
-        }
-        /* Optional: Makes the sample page fill the window. */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
 
     </style>
-
-
 </head>
 
-<body id="page-top" ng-app="myModule">
+<body id="page-top">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
@@ -94,130 +76,95 @@
     </div>
 </nav>
 
-<section class="portfolio" id="portfolio">
-    <div class="container about_box">
-        <h1 style="text-align:center ">SEARCH FOR A FEMBUIZ NEAR YOU!</h1>
-        <br>
-    </div>
-</section>
-<div id="map"></div>
-<div >
-<section class="portfolio" id="portfolio">
-    <div ng-controller="myController" class="container about_box">
-
-        <div class="row ">
-
-            <div class="col-sm-4"  >
-                <div class="form-group">
-
-                    <select class="form-control"  ng-model="selected.category" ng-options="obj.name as obj.name for obj in Categories" id="sel1" >
-                        <option value="" selected disabled>Categories</option>
-
-                    </select>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" ng-model="searchText.business_name"  id="business_name"name="business_name" placeholder="Business Name">
-                </div>
+<br><br><br><br><br>
+    <div style="margin-left:100px;margin-right: 100px;">
+        <div class="row">
+        <div class="col-md-4">
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
             </div>
-            <div class="col-sm-4" >
-                <div class="form-group">
-                    <input type="text" class="form-control" ng-model="searchText.town_city" id="town_city" name="town_city" placeholder="Town/City">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" ng-model="searchText.username" id="username" name="username" placeholder="Username">
-                </div>
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
             </div>
-            <div class="col-sm-4" >
-                <div class="form-group">
-                    <input type="text" class="form-control" ng-model="searchText.state" id="state" name="state" placeholder="State">
-                </div>
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
+            </div>
 
+
+        </div>
+        <div class="col-md-4">
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
+            </div>
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
+            </div>
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, coignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
+            </div>
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, cignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
+            </div>
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, consectiis dignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
+            </div>
+            <div>
+                <p class="h3" style="margin-bottom: 25px;">Bootstrap heading</p>
+                <p style="margin-bottom: 25px;color: #c1c1a4;">  ipsum dolor sit amet, coignissimos ducimus earum eos esse incidunt ipsum iure laboriosam magni maiores, neque nesciunt nobis obcaecati odit porro reprehenderit similique, voluptate.</p>
+                <p>27 March, 2017 / <a href="">0 Comments</a></p>
             </div>
 
         </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <button type="submit" class="btn Search_btn">Search</button>
-                </div>
 
-                <div class="col-sm-6">
-                    <button type="submit" class="btn Reset_btn">Reset</button>
-                </div>
-            </div>
-
-        <br><br><br><br><br><br>
-
-        <div class="row " style="width: 90%; margin-left: 100px;" >
-            <div ng-repeat="employee in employees | filter:searchText|filter:selected" class="col-md-4" >
-                <div style="" >
-                    <div class="card" style="width: 20rem; ">
-                        <img class="card-img-top" src="image.jpg" alt="Card image cap">
-                        <div align="center" style="margin-top:-20px; ">
-                            <img src="image1.jpg" class="rounded-circle" alt="Cinque Terre" style="width: 90px;height: 90px;">
-                        </div>
-                        <div class="card-body">
-                            <div align="center">
-                                <h5 class="card-title">{{employee.username}}</h5>
-
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p id="morecard"> </p>
-
-                                <a href="#" onclick="" data-toggle="collapse" data-target="#demo"><i class="fa fa-angle-down"></i></a>
-
-                                <div id="demo" class="collapse">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod temp </p>
-                                    <div class="row" >
-                                        <div class="col-md-12">
-                                            <div align="center">
-                                                <button type="button" style="background-color: #3b5998" class="btn btn-default btn-circle"><i class="fab fa-facebook-f"></i></button>
-                                                <button type="button" style="background-color: #0e76a8" class="btn btn-default btn-circle"><i class="fab fa-linkedin-in"></i></i></button>
-                                                <button type="button" style="background-color: #4c68d7" class="btn btn-default btn-circle"><i class="fab fa-instagram"></i></button>
-                                                <style>
-                                                    .btn-circle {
-                                                        width: 50px;
-                                                        height: 50px;
-                                                        padding: 10px 16px;
-                                                        font-size: 18px;
-                                                        line-height: 1.33;
-                                                        border-radius: 25px;
-                                                    }
-                                                </style>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
     </div>
-</section>
+        <div class="row">
+            <div class="col-md-12" >
+                <div align="center" style="margin: 40px;">
+                    <button type="button" class="btn btn-default btn-circle btn-lg"><i class="fas fa-arrow-left"></i></button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg">1</i></button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg">2</i></button>
+                    <button type="button" class="btn btn-default btn-circle btn-lg"><i class="fas fa-arrow-right"></i></i></button>
 
+                    <style>
+                        .btn-circle.btn-lg {
+                            width: 50px;
+                            height: 50px;
+                            padding: 10px 16px;
+                            font-size: 18px;
+                            line-height: 1.33;
+                            border-radius: 25px;
+                        }
+                    </style>
+                </div>
+            </div>
 
+        </div>
 </div>
-
-
-
-
-<script>
-    var map;
-    function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8
-        });
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ROLp3cQjlpWwzzc5bVLFOHVqMB8C30M&callback=initMap"
-        async defer></script>
-
 <!-- Footer -->
 <footer class="footer text-center">
     <div class="container">
